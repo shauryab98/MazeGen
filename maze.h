@@ -15,14 +15,16 @@ private:
     string algo;
     vector<vector<int>> maze;
 
+    bool out_of_bounds(int nx, int ny);
+    int cellIndex(int x, int y);
+    void recursive_backtrack_dfs(int x, int y);
+
 public:
     
     Maze(int _height, int _width);
-    bool out_of_bounds(int nx, int ny);
     void reset();
     void draw_ascii();
 
-    void _recursive_backtrack_dfs(int x, int y);
     void recursive_backtracker();
 
     void krusal();
