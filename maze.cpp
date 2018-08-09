@@ -103,7 +103,7 @@ int Maze::cellIndex(int x, int y) {
 }
 
 
-void Maze::krusal() {
+void Maze::kruskal() {
     DSU dsu(height * width);
     vector<Wall> walls;
     for(int i = 0; i < height; i++) {

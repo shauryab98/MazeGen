@@ -27,5 +27,5 @@ public:
 
     void recursive_backtracker();
 
-    void krusal();
+    void kruskal();
 };
